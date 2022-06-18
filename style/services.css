@@ -1,0 +1,143 @@
+@font-face {
+   font-family: 'JetBrainsMono-Medium';
+   src: url("../fonts/JetBrainsMono/JetBrainsMono-Medium.ttf");
+}
+@font-face {
+   font-family: "JetBrainsMono-Light";
+   src: url("../fonts/JetBrainsMono/JetBrainsMono-Light.ttf");
+}
+@font-face {
+   font-family: "Overpass";
+   src: url("../fonts/Overpass/Overpass-VariableFont_wght.ttf");
+}
+*, ::before, ::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.container {
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+header {
+   width: 98%;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+nav {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.active {
+   overflow: hidden;
+   position: relative;
+   color: #fff;
+   background-color: #000;
+   text-decoration: none;
+   font-family: "JetBrainsMono-Medium";
+   font-size: 15px;
+   border: 1px solid #000;
+   border-radius: 15px;
+   margin-left: 10px;
+   padding: 1rem 1.5rem;
+}
+.apple__link {
+   transition: all 0.4s ease;
+}
+.apple__link:hover {
+   transform: scale(1.1);
+}
+.nav__link {
+   overflow: hidden;
+   position: relative;
+   color: #000;
+   text-decoration: none;
+   font-family: "JetBrainsMono-Medium";
+   font-size: 15px;
+   border: 1px solid #000;
+   border-radius: 15px;
+   margin-left: 10px;
+   padding: 1rem 1.5rem;
+}
+.nav__link::before {
+   z-index: -1;
+   content: '';
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 0;
+   height: 100%;
+   background-color: #000;
+   transition: all 0.5s ease-out;
+}
+.nav__link:hover {
+   color: #fff;
+}
+.nav__link:hover::before {
+   width: 100%;
+}
+h1 {
+   font-family: "JetBrainsMono-Medium";
+   width: fit-content;
+}
+table {
+   width: 98%;
+}
+table,tr,th,td {
+   border: 1px solid #000;
+   border-collapse: collapse;
+}
+.circle {
+   width: fit-content;
+   margin: 20px auto;
+}
+
+th{
+   font-family: "Overpass";
+   padding: 15px;
+}
+td {
+   padding: 0 50px;
+}
+td img {
+   width: 190px;
+}
+.itunes {
+   padding: 0px 60px;
+}
+.itunes img{
+   width: 250px;
+}
+.applepay {
+   padding: 0 50px;
+}
+.applepay img {
+   width: 200px;
+}
+p {
+   font-family: "JetBrainsMono-Light";
+}
+.text {
+   margin-top: 30px;
+   display: flex;
+   flex-direction: column;
+   width: 97%;
+}
+.text p {
+   width: 100%;
+   margin-bottom: 15px;
+}
+.footer {
+   position: relative;
+   width: 100%;
+   padding-top: 10px;
+   padding-left: 15px;
+   margin-bottom: 20px;
+   border-top: 1px solid #000;
+}
